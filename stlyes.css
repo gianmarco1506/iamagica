@@ -1,0 +1,9 @@
+body{
+    background: #0A2E4D ; /* cor de fundo */
+}
+
+h1 {
+ text-align: center; /* alinhamento do texto */
+ font-size: 36px; /* tamanho da fonte */
+ color: #ffffff; /* cor do texto */
+}
