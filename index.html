@@ -18,32 +18,37 @@
   <!-- PRINCIPAL /  CAIXA INVISÍVEL -->
     <main>
 
-       <section>
+       <section class="sessao-maior">
             <H2> 💻Código CSS</H2>
-            <div></div>
+            <div class="area-codigo">// Aqui aparecerá o código da animação...</div>
        </section> 
 
-       <section>
+       <section class="sessao-maior">
            <h2> 🎨resultado</h2>
+           <div class = "area-resultado">A mágica aparecerá aqui...</div>
        </section>
 
+</main>
 
-       <section>
-          <input type="text" placeholder="Descreva a animação que voce quer" />
-             <button>Criar Mágica  ✨</button>
-           </input>
+
+       <section class="sessao-menor">
+        <!-- Input para descrever a animação -->
+           <input class = "input-animacao" placeholder="Descreva a animação que você quer criar e deixe a IA fazer o resto!"> 
+             <button onclick="cliqueiNoBotao()" class = "botao-magico">Criar Mágica  ✨</button>
          </section>
 
-    </main>
+   
 
 
 </body>
+<script src="script.js"></script>
+<!--SOURCE = ORIGEM-->
 </html>
 
 <!-- 
 Tags HTML:
  h1 - titulo principal
-section - sessao
+section - sessao 
  main - sessao principal
  div - caixa generica 
 

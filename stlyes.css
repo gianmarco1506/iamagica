@@ -1,5 +1,19 @@
+*{
+    box-sizing: border-box; /* inclui padding e border no cálculo da largura e altura */
+    
+}
+
 body{
     background: #0A2E4D ; /* cor de fundo */
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%; /* altura total */
+    padding: 20px; /* espaçamento interno */
+    max-width: 1200px; /* largura máxima */
+    margin: 0 auto; /* centraliza o conteúdo */
+    /*
+    1- em cima e em baixo
+    2- dos lados
+    */
 }
 
 h1 {
@@ -7,3 +21,91 @@ h1 {
  font-size: 36px; /* tamanho da fonte */
  color: #ffffff; /* cor do texto */
 }
+
+h2{
+    color: #051626;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+main{
+    display: flex;
+    gap: 20px; /* espaçamento entre as seções */
+    margin-bottom: 30px; /* espaçamento inferior */
+}
+
+.sessao-maior {
+    background: #F8F9FA;
+    width: 100%;/* largura da seção */
+    border-radius: 8px; /* bordas arredondadas */
+    padding: 30px; /* espaçamento interno */
+    height: 400px; /* altura*/
+}
+
+.area-codigo{
+    background: #051626; /* cor de fundo */
+    height: calc(100% - 70px); /* altura total menos o espaçamento */
+    border-radius: 8px; /* bordas arredondadas */
+    padding: 20px; /* espaçamento interno */
+    color: #F8F9FA; /* cor do texto */
+    font-size: 14px; /* tamanho da fonte */
+    
+}
+
+.area-resultado{
+    background: #F8F9FA; /* cor de fundo */
+    border-radius: 8px; /* bordas arredondadas */
+    height: calc(100% - 70px); /* altura total menos o espaçamento */
+    display: flex; /* exibe os elementos em linha */
+    align-items: center; /* alinha verticalmente */
+    padding: 20px; /* espaçamento interno */
+    justify-content: center; /* centraliza horizontalmente */
+   color: #999999;
+}
+
+.sessao-menor{
+    background: #F8F9FA;
+    border-radius: 8px; /* bordas arredondadas */   
+    padding: 20px; /* espaçamento interno */
+    display: flex; /* exibe os elementos em linha */
+    gap: 15px; /* espaçamento entre os elementos */
+
+}
+
+input{
+    width: 80%; /* largura do input */
+    padding: 15px 20px; /* espaçamento interno */
+    font-size: 16px; /* tamanho da fonte */
+    color: #051626; /* cor do texto */
+    border-radius: 6px; /* bordas arredondadas */
+    border: 2px solid #94A3B8 ; /* borda */
+    
+}
+
+button{
+    background: #37E359;
+    border: none;
+    padding: 15px 40px; /* espaçamento interno */
+    border-radius: 16px; /* bordas arredondadas */
+    font-size: 16px; /* tamanho da fonte */
+    font-weight: bold; /* negrito */
+    color: #F8F9FA; /* cor do texto */
+    transition: 0.5s;
+    cursor: pointer; /* cursor de ponteiro */
+}
+
+button:hover{
+    background: #52FF74; /* cor de fundo ao passar o mouse */
+}
+
+button:active{
+    transform: scale(0.9); /* efeito de clique */
+}
+
+
+/*
+top - em cima
+bottom - em baixo
+left - esquerda
+right - direita
+*/
