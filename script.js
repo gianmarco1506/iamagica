@@ -25,7 +25,7 @@ async function cliqueiNoBotao() {
   let codigo = document.querySelector(".area-codigo");
   let areaResultado = document.querySelector(".area-resultado");
 
-  let botao = document.querySelector(".botao-magica")
+  let botao = document.querySelector(".botao-magico");
 
   botao.disabled = true;
   botao.textContent = "Criando...";
