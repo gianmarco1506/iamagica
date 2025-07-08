@@ -92,6 +92,7 @@ button{
     color: #F8F9FA; /* cor do texto */
     transition: 0.5s;
     cursor: pointer; /* cursor de ponteiro */
+    transition: 0.5s;
 }
 
 button:hover{
