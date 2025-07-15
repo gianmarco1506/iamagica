@@ -3,55 +3,44 @@
 
 <head>
   <link rel="stylesheet" href="login.css">
-  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'rel='stylesheet'>   
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>\✨Criador Magico Login</title>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>✨ Criador Mágico Login</title>
 </head>
 
 <body>
-    <main class="container">
-        <form>
-               <h1>
-                Login Criador Magico de animação✨
-                </h1>
-        <div class="input-box"> 
-             <input placeholder="Usuário"  type="email">
-             <i class="bx bxs-user"></i>
-        </div>
-        
-        <div class="input-box"> 
-             <input placeholder="Senha" type="password">
-             <i class="bx bxs-lock-alt"></i>
-        </div>
-        
-        <div class="remember-forgot">
-          <label>
-              <input type="checkbox">
-              Lembrar Senha
-          </label>
-          <a href="#"> Esqueci a senha</a>
-        </div>
+  <main class="container">
+    <form action="index.php" method="POST"> <!-- Aponte para o arquivo que processará o login -->
+      <h1>Login Criador Mágico de Animação✨</h1>
+      <div class="input-box">
+        <input placeholder="Usuário" type="text" name="nome" id="nome" class="inputUser" required>
+        <i class="bx bxs-user"></i>
+      </div>
 
-    <div >
-     <a href="home.html"><button  type="button" class="login" >Login</button> </a>
-    </div>
-       
+      <div class="input-box">
+        <input placeholder="Senha" type="password" name="senha" id="senha" class="inputUser" required>
+        <i class="bx bxs-lock-alt"></i>
+      </div>
 
-        <div class="register-link">
-            <p>Não tem uma conta? <a href="#">Cadastre-se</a>
+      <div class="remember-forgot">
+        <label>
+          <input type="checkbox" name="lembrar">
+          Lembrar Senha
+        </label>
+        <a href="#"> Esqueci a senha</a>
+      </div>
 
-            </p>
-           
-        </div>
+      <div>
+        <button type="submit" class="login">Login</button> <!-- Alterado para type="submit" -->
+      </div>
 
-      </form>
-    </main>
+      <div class="register-link">
+        <p>Não tem uma conta? <a href="#">Cadastre-se</a></p>
+      </div>
 
-       
-   
+    </form>
+  </main>
 </body>
+
 </html>
-
-
