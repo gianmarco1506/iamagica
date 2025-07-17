@@ -16,7 +16,7 @@ if ($conn->connect_error) {
 }
 echo "Conectado com sucesso!";
 
-
+$sql = "SELECT * FROM `usuarios`;";
 
 
 
