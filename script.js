@@ -6,7 +6,7 @@ FUNCOES
 É um pedacinho de código QUE, só executa 
 Quando é chamado.
 
-documet = HTML
+document = HTML
 querySelector = buscar alguém no HTML
 
 fetch - ferramenta para se comunicar com algo fora do codigo
@@ -18,7 +18,11 @@ fetch - ferramenta para se comunicar com algo fora do codigo
 [x] Colocar na Tela o que ele respondeu    
 
 */
-let webhook = "https://gian1506.app.n8n.cloud/webhook/animacao-css";
+
+
+
+let webhook = "http://localhost:5678/webhook/animacao-css";
+
 // funcao assincrona
 async function cliqueiNoBotao() {
   let textoInput = document.querySelector(".input-animacao").value;
@@ -26,23 +30,29 @@ async function cliqueiNoBotao() {
   let areaResultado = document.querySelector(".area-resultado");
 
   let botao = document.querySelector(".botao-magico");
-
+   
+  
   botao.disabled = true;
   botao.textContent = "Criando...";
   botao.style.background = "#888";
 
+ 
+  
 
   // fetch - 1) O endereco 2) configuracoes 3) os dados
   // JSON - O formato de dados que usamos na internet
-
+  //fetch é uma ferramenta que permite se comunicar com algo fora do código, como um servidor ou uma API.
+  // await - espera a resposta do fetch antes de continuar o código
   let resposta = await fetch(webhook, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ pergunta: textoInput }),
   });
-
+  
   let resultado = await resposta.json();
+
   console.log(resultado);
+
   let info = JSON.parse(resultado.resposta);
 
   console.log(info);
