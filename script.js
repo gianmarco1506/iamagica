@@ -19,8 +19,6 @@ fetch - ferramenta para se comunicar com algo fora do codigo
 
 */
 
-
-
 let webhook = "http://localhost:5678/webhook/animacao-css";
 
 // funcao assincrona
